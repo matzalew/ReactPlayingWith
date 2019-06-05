@@ -4,19 +4,19 @@ function toRoman(arabic){
                     L:50,XL:40,X:10,IX:9,
                     V:5,IV:4,I:1};
     if (arabic <= 0) {
-        roman="none"
+      roman="none"
     } else {
-    var roman = '', i;
-    for ( i in romanMap ) {
-      while ( arabic >= romanMap[i] ) {
-        roman += i;
-        arabic -= romanMap[i];
+      var roman = '', i;
+      for ( i in romanMap ) { 
+        while ( arabic >= romanMap[i] ) {
+          roman += i;
+          arabic -= romanMap[i];
+        }
       }
     }
+  return roman;
 }
-    return roman;
 
-}
 export default toRoman
 
 
