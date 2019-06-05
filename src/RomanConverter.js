@@ -13,8 +13,9 @@ class RomanConverter extends React.Component {
     render(){
         return(
             <React.Fragment>
+                <h1>Roman to arabic converter</h1>
                 <label> Arabic:<input onChange={this.handleChange} type="number"></input></label>
-                <h1>Roman: {this.state.roman ? this.state.roman : "none"}</h1>
+                <h2>Roman: {this.state.roman ? this.state.roman : "none"}</h2>
             </React.Fragment>
         )
     }
