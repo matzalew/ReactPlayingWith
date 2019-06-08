@@ -13,7 +13,7 @@ class ArabicConverter extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <h1>Arabic to roman converter</h1>
+                <h1>Roman to arabic converter</h1>
                 <label> Roman:<input onChange={this.handleChange} type="text"></input></label>
                 <h2>Arabic: {this.state.arabic ? this.state.arabic : "none"}</h2>
             </React.Fragment>

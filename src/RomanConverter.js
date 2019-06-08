@@ -7,13 +7,12 @@ class RomanConverter extends React.Component {
     }
     handleChange = (event) => {
         const arabic = event.target.value;
-
         this.setState({roman:toRoman(arabic)})
     }
     render(){
         return(
             <React.Fragment>
-                <h1>Roman to arabic converter</h1>
+                <h1>Arabic to roman converter</h1>
                 <label> Arabic:<input onChange={this.handleChange} type="number"></input></label>
                 <h2>Roman: {this.state.roman ? this.state.roman : "none"}</h2>
             </React.Fragment>
