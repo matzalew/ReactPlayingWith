@@ -3,12 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import ArabicConverter from './ArabicConverter';
 import RomanConverter from './RomanConverter';
+import Converter from './Converter';
+import RomanSumator from './RomanSumator';
 
 function App() {
   return (
     <React.Fragment>
-       <RomanConverter/>
-       <ArabicConverter/>
+       <Converter typeOfConverson="toRoman"/>
+       <Converter typeOfConverson="toArabic"/>
+       <RomanSumator/>
     </React.Fragment>
   );
 }
